@@ -1,0 +1,117 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<link rel="shorcut icon" href="../img/favicon.png" /> <!--Icono de la pagina-->
+<title>Contactos</title>
+</head>
+<body style="margin: 0; font-family: Gotham, 'Helvetica Neue', Helvetica, Arial, 'sans-serif'">
+<!--	Barra de navegacion-->
+<!--
+	<div id="navbar" style="background-color: #e05306; margin: auto; height: 80px; width: 100%" align="center">
+	  <table width="100%" border="0" align="center" style="color: aliceblue">
+	    <tbody>
+	      <tr>	        
+	        <td width="40%" height="73" align="left" valign="middle"><img src="../img/logo1.png" width="191" height="67" alt=""/></td>
+	        <td width="10%" align="center" valign="middle"><a href="../index.html" style="text-decoration: none; color: aliceblue">INICIO</a></td>
+	        <td width="10%" align="center" valign="middle"><a href="nosotros.html" style="text-decoration: none; color: aliceblue">PRODUCTOS</a></td>
+	        <td width="10%" align="center" valign="middle"><a href="servicios.html" style="text-decoration: none; color: aliceblue">SERVICIOS</a></td>
+	        <td width="10%" align="center" valign="middle"><a href="contactos.html" style="text-decoration: none; color: aliceblue">CONTACTOS</a></td>
+          </tr>
+        </tbody>
+      </table>
+	</div>
+-->
+<!--	Form-->
+	<div id="form" style="background-image: url('../img/contact-bg.png'); margin: auto; height: 750px" align="center">
+		<br>
+		<h1 style="color: whitesmoke; font-size: 50px">Formulario de Información</h1>
+<form id="form1" name="form1" method="post" action="../php/envio.php">
+  <fieldset style="width: 50%; margin: auto; color: white; font-size: 20px; padding: 20px">
+    <legend>Campos de Informacion</legend>
+    <p>
+      <label for="name">Nombre Completo:</label>
+      <input type="text" name="name" id="name" pattern="([A-Z][a-z]{1,10})+\s+([A-Z][a-z]{1,10})+\s+([A-Z][a-z]{1,10})+\s+([A-Z][a-z]{1,10})" placeholder="Ingrese su nombre completo" autofocus required>	
+    </p>
+	  <p>
+      <label for="direccion">Direccion:</label>
+      <input type="text" name="direccion" id="direccion" placeholder="Ingrese su nombre completo" autofocus required>	
+    </p>
+	  <p>
+      <label for="email">Email:</label>
+      <input type="email" name="email" id="email" pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}" placeholder="ejemplo@email.com" >	
+    </p>	
+<!--
+	  <p>
+      <label for="url">URL:</label>
+      <input type="url" name="url" id="url" pattern="https?://.+[a-zA-Z0-9]+\.+[a-zA-Z0-9]+" placeholder="Escribe la URL de tu página web personal" >	
+    </p>
+-->
+    <p>
+      <label for="date">Fecha de Nacimiento:</label>
+      <input type="date" name="date" id="date" max="2017-01-01" min="2000-01-01">	
+    </p>
+<!--
+	  <p>
+      <label for="datetime">Fecha y Hora Local:</label>
+      <input type="datetime-local" name="datetime" id="datetime">	
+    </p>
+-->
+<!--
+	  <p>
+	    <label for="sueldo">Sueldo:</label>
+        <input type="text" name="sueldo" id="sueldo" pattern="^(?:[1-9]\d{0,2}|5000)(?:\.\d{1,2})?$">
+	  </p>
+-->
+	  <p>
+	    <label for="phone">Telefono:</label>
+        <input type="tel" name="phone" id="phone" pattern="[0-9]{1,10}" placeholder="0987654321">
+	  </p>
+	  <p>
+	    <label for="color">Color Favorito:</label>
+        <input type="color" name="color" id="color">
+	  </p>
+	  <p>
+	    <label for="servicio">Servicio Requerido:</label>
+		  <select>
+		    <option value="1">Fumigacion Exteriores</option>
+		    <option value="2">Fumigacion Interiores</option>
+		    <option value="3">Fumigacion Corporativa</option>
+		  </select>
+	  </p>
+  </fieldset>
+	<fieldset style="width: 50%; margin: auto; color: white;  font-size: 20px; padding: 20px">
+  <p >
+      <input type="submit" name="submit" id="submit" value="Enviar" style="font-family: Gotham, 'Helvetica Neue', Helvetica, Arial, 'sans-serif';font-size: 20px; background: none; color: whitesmoke">
+    	<input type="reset" name="reset" id="reset" value="Reestablecer" style="font-family: Gotham, 'Helvetica Neue', Helvetica, Arial, 'sans-serif';font-size: 20px; background: none; color: whitesmoke">
+    </p>
+</fieldset>
+</form>
+
+	</div>
+<!--	Contenido-->
+	<div id="content" style="margin: auto; height: 620px" align="center">
+		<h1 style="font-family: Gotham, 'Helvetica Neue', Helvetica, Arial, 'sans-serif'; color: #e05306; font-size: 50px">Mapa en Tiempo Real</h1>
+		<iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3989.796993794069!2d-78.48663712577287!3d-0.18733613541079402!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x91d59a87ac56537d%3A0x56b246bdb3f6ad13!2sParque%20La%20Carolina!5e0!3m2!1sen!2sec!4v1683911911561!5m2!1sen!2sec"
+        width="50%"
+        height="450"
+        style="border: 0; margin-top: 50px; margin-bottom: 0"
+        allowfullscreen=""
+        loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade"
+      ></iframe>
+		
+	</div>
+<!--	Pie de Página-->
+<!--	<div id="footer" style="background-image: url('../img/footer1.png');background-size: cover; margin: auto; height: 400px" align="center">-->
+<!--		<img src="../img/footer1.png" width="100%">-->
+<!--	</div>-->
+<!--Copyright footer-->
+<!--
+<div class="copyright" id="copyright" style="text-align: center; height: 100px; background-color: #e05306; color: white">
+	<h3 style="margin: auto; padding: 40px">Copyright 2023 All Right Reserved By Cristian Tello - catello2@espe.edu.ec</h3>
+</div>
+-->
+</body>
+</html>

@@ -1,0 +1,38 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Principal</title>
+</head>
+
+<body>
+<form id="form1" name="form1" method="post" action="php/enviodatos.php">
+  <fieldset style="width: 50%; margin: auto">
+    <legend>Datos del Alumno</legend>
+    <p>
+      <label for="ced">Cedula:</label>
+      <input type="text" name="ced" id="ced" autofocus placeholder="Ingrese cedula" maxlength="10" min="1" pattern="[0-9]{1,10}">
+    </p>
+    <p>
+      <label for="name">Nombres:</label>
+      <input type="text" name="name" id="name" required pattern="[A-Z]{1,2}+([a-z]+\s){5,10}">
+    </p>
+    <p>
+      <label for="apell">Apellido:</label>
+      <input type="text" name="apell" id="apell" pattern="[A-Z]{1,2}+([a-z]+\s){5,10}">
+    </p>
+    <p>
+      <label for="textfield">Nombre de Usuario:</label>
+      <input type="text" name="textfield" id="textfield" pattern="[A-Z]+([a-z0-9]){7,14}">
+    </p>    
+  </fieldset>
+	<fieldset style="width: 50%; margin: auto">
+  <p>
+      <input type="submit" name="submit" id="submit" value="Enviar">
+    	<input type="reset" name="reset" id="reset" value="Reestablecer">
+    </p>
+</fieldset>
+</form>
+
+</body>
+</html>

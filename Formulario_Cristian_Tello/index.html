@@ -1,0 +1,57 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Formulario de Cristian Tello</title>
+</head>
+
+<body style="background-color: burlywood">
+<div class="titulo" id="titulo" style="width: 50%; margin: auto; color: azure" align="center">
+	<h1>Formulario de Cristian Tello</h1>
+	</div>
+<form id="form1" name="form1" method="post" action="php/envio.php">
+  <fieldset style="width: 50%; margin: auto; color: chocolate">
+    <legend>Campos de Informacion</legend>
+    <p>
+      <label for="name">Nombre Completo:</label>
+      <input type="text" name="name" id="name" pattern="([A-Z][a-z]{1,10})+\s+([A-Z][a-z]{1,10})+\s+([A-Z][a-z]{1,10})+\s+([A-Z][a-z]{1,10})" placeholder="Ingrese su nombre completo" autofocus required>	
+    </p>
+	  <p>
+      <label for="email">Email:</label>
+      <input type="email" name="email" id="email" pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}" placeholder="ejemplo@email.com" >	
+    </p>	
+	  <p>
+      <label for="url">URL:</label>
+      <input type="url" name="url" id="url" pattern="https?://.+[a-zA-Z0-9]+\.+[a-zA-Z0-9]+" placeholder="Escribe la URL de tu página web personal" >	
+    </p>
+    <p>
+      <label for="date">Fecha de Nacimiento:</label>
+      <input type="date" name="date" id="date" max="2017-01-01" min="2000-01-01">	
+    </p>
+	  <p>
+      <label for="datetime">Fecha y Hora Local:</label>
+      <input type="datetime-local" name="datetime" id="datetime">	
+    </p>
+	  <p>
+	    <label for="sueldo">Sueldo:</label>
+        <input type="text" name="sueldo" id="sueldo" pattern="^(?:[1-9]\d{0,2}|5000)(?:\.\d{1,2})?$">
+	  </p>
+	  <p>
+	    <label for="phone">Telefono:</label>
+        <input type="tel" name="phone" id="phone" pattern="[0-9]{1,10}" placeholder="0987654321">
+	  </p>
+	  <p>
+	    <label for="color">Color Favorito:</label>
+        <input type="color" name="color" id="color">
+	  </p>
+  </fieldset>
+	<fieldset style="width: 50%; margin: auto;">
+  <p >
+      <input type="submit" name="submit" id="submit" value="Enviar" style="background-color: darkgoldenrod">
+    	<input type="reset" name="reset" id="reset" value="Reestablecer" style="background-color: darkgoldenrod">
+    </p>
+</fieldset>
+</form>
+
+</body>
+</html>
