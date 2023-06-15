@@ -1,0 +1,447 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+	 <link rel="shorcut icon" href="../img/taza-caliente.png" />
+    <title>contactos</title>
+  </head>
+
+  <body
+    style="
+      margin: 0;
+      font-family: Segoe, 'Segoe UI', 'DejaVu Sans', 'Trebuchet MS', Verdana,
+        'sans-serif';
+    "
+  >
+    <div
+      class="cabecera"
+      id="cabecera"
+      style="
+        background-image: linear-gradient(to right, #1f1c45 67%, #db341e 33%);
+        margin: auto;
+        height: 80px;
+        width: 100%;
+      "
+    >
+      <div
+        class="logo"
+        id="logo"
+        style="float: left; padding-left: 30px; padding-top: 10px"
+      >
+        <img src="../img/logo.png" width="100px" height="80px" alt="" />
+      </div>
+      <nav
+        class="navbar"
+        id="navbar"
+        style="
+          float: right;
+          padding-top: 10px;
+          padding-right: 220px;
+          font-size: 30px;
+        "
+      >
+        <ul
+          style="margin: 0; list-style-type: none; padding: 0; overflow: hidden"
+        >
+          <li style="float: left">
+            <a
+              href="../index.html"
+              style="
+                display: block;
+                color: white;
+                text-align: center;
+                padding: 14px 16px;
+                text-decoration: none;
+              "
+              >INICIO</a
+            >
+          </li>
+          <li style="float: left">
+            <a
+              href="nosotros.html"
+              style="
+                display: block;
+                color: white;
+                text-align: center;
+                padding: 14px 16px;
+                text-decoration: none;
+              "
+              >NOSOTROS</a
+            >
+          </li>
+          <li style="float: left">
+            <a
+              href="servicios.html"
+              style="
+                display: block;
+                color: white;
+                text-align: center;
+                padding: 14px 16px;
+                text-decoration: none;
+              "
+              >SERVICIOS</a
+            >
+          </li>
+          <li style="float: left">
+            <a
+              href="contactos.html"
+              style="
+                display: block;
+                color: white;
+                text-align: center;
+                padding: 14px 16px;
+                text-decoration: none;
+              "
+              >CONTACTO</a
+            >
+          </li>
+        </ul>
+      </nav>
+    </div>
+    <div
+      class="container-form"
+      id="container-form"
+      style="
+        min-height: 600px;
+        width: 100%;
+        background-image: linear-gradient(to right, #1f1c45 67%, #db341e 33%);
+        color: white;
+        margin: 0;
+        color: white;
+      "
+      align="center"
+    >
+      <h1
+        style="margin: 0; padding-top: 140px; padding-bottom: 30px"
+        align="center"
+      >
+        CONTÁCTANOS
+      </h1>
+      <form id="form" name="form" method="post" action="../php/envio.php">
+        <fieldset style="margin: auto; border: none">
+          <input
+            type="text"
+            name="name"
+            id="name"
+            pattern="([A-Z][a-z]{1,10})+\s+([A-Z][a-z]{1,10})+\s+([A-Z][a-z]{1,10})+\s+([A-Z][a-z]{1,10})"
+            placeholder="Ingrese su nombre completo"
+            autofocus
+            required
+            style="
+              padding: 0px 30px;
+              margin-bottom: 33px;
+              width: 30%;
+              height: 74px;
+              background: #fff;
+              color: #626262;
+              font-size: 17px;
+              font-weight: normal;
+              border: inherit;
+            "
+          />
+          <br />
+          <input
+            type="text"
+            name="direccion"
+            id="direccion"
+            placeholder="Direccion"
+            style="
+              padding: 0px 30px;
+              margin-bottom: 33px;
+              width: 30%;
+              height: 74px;
+              background: #fff;
+              color: #626262;
+              font-size: 17px;
+              font-weight: normal;
+              border: inherit;
+            "
+          />
+          <br />
+          <input
+            type="email"
+            name="email"
+            id="email"
+            pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}"
+            placeholder="Email"
+            style="
+              padding: 0px 30px;
+              margin-bottom: 33px;
+              width: 30%;
+              height: 74px;
+              background: #fff;
+              color: #626262;
+              font-size: 17px;
+              font-weight: normal;
+              border: inherit;
+            "
+          />
+          <br />
+          <input
+            type="tel"
+            name="phone"
+            id="phone"
+            pattern="[0-9]{1,10}"
+            placeholder="Telefono"
+            style="
+              padding: 0px 30px;
+              margin-bottom: 33px;
+              width: 30%;
+              height: 74px;
+              background: #fff;
+              color: #626262;
+              font-size: 17px;
+              font-weight: normal;
+              border: inherit;
+            "
+          />
+          <br />
+          <input
+            type="text"
+            name="msg"
+            id="msg"
+            placeholder="Mensaje"
+            style="
+              margin-bottom: 33px;
+              width: 30%;
+              background: #fff;
+              color: #626262;
+              font-size: 17px;
+              font-weight: normal;
+              padding: 74px 30px 10px 30px;
+              height: 178px;
+              border: inherit;
+            "
+          />
+          <br />
+          <input
+            type="submit"
+            name="submit"
+            id="submit"
+            value="Enviar"
+            style="
+              font-size: 17px;
+              transition: ease-in all 0.5s;
+              background-color: #db3620;
+              text-transform: uppercase;
+              color: #fff;
+              max-width: 236px;
+              width: 100%;
+              display: block;
+              margin-top: 17px !important;
+              font-weight: bold;
+              height: 80px;
+              margin: 0 auto;
+              border-radius: 60px;
+              line-height: 80px;
+            "
+          />
+        </fieldset>
+      </form>
+    </div>
+    <br />
+    <div
+      class="location"
+      id="location"
+      style="
+        min-height: 600px;
+        width: 100%;
+        background-color: #1f1c45;
+        color: white;
+        margin: 0;
+        color: white;
+      "
+      align="center"
+    >
+      <h1
+        style="margin: 0; padding-top: 50px; padding-bottom: 10px"
+        align="center"
+      >
+        MAPA DE UBICACIÓN
+      </h1>
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3989.796993794069!2d-78.48663712577287!3d-0.18733613541079402!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x91d59a87ac56537d%3A0x56b246bdb3f6ad13!2sParque%20La%20Carolina!5e0!3m2!1sen!2sec!4v1683911911561!5m2!1sen!2sec"
+        width="50%"
+        height="450"
+        style="border: 0; margin-top: 50px; margin-bottom: 0"
+        allowfullscreen=""
+        loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade"
+      ></iframe>
+    </div>
+    <footer
+      class="footer"
+      id="footer"
+      style="background-color: #1f1c45; height: 220px; width: 100%"
+    >
+      <div
+        class="footer-nav"
+        id="footer-nav"
+        style="width: 100%; position: relative; color: white"
+        align="center"
+      >
+        <div
+          class="footer-nav-i"
+          id="footer-nav-i"
+          style="display: inline-block; width: 33%; height: 100%"
+        >
+          <h3>MENÚ</h3>
+          <ul style="list-style-type: none; margin: 0; padding: 0px">
+            <li style="padding: 7px">
+              <a
+                href="../index.html"
+                style="text-decoration: none; color: white"
+                >Inicio</a
+              >
+            </li>
+            <li style="padding: 7px">
+              <a
+                href="nosotros.html"
+                style="text-decoration: none; color: white"
+                >Nosotros</a
+              >
+            </li>
+            <li style="padding: 7px">
+              <a
+                href="servicios.html"
+                style="text-decoration: none; color: white"
+                >Servicios</a
+              >
+            </li>
+            <li style="padding: 7px">
+              <a
+                href="contactos.html"
+                style="text-decoration: none; color: white"
+                >Contacto</a
+              >
+            </li>
+          </ul>
+        </div>
+        <div
+          class="footer-services"
+          id="footer-services"
+          style="display: inline-block; width: 33%; height: 100%"
+        >
+          <h3>SERVICIOS DE CAFÉ</h3>
+          <ul style="list-style-type: none; margin: 0; padding: 0px">
+            <li style="padding: 7px">Café Negro</li>
+            <li style="padding: 7px">Café Rojo</li>
+            <li style="padding: 7px">Café Serviec</li>
+            <li style="padding: 7px">Té Verde</li>
+          </ul>
+        </div>
+        <div
+          class="footer-social"
+          id="footer-social"
+          style="display: inline-block; width: 33%; height: 100%"
+        >
+          <h3>NUESTRAS REDES SOCIALES</h3>
+          <ul style="list-style-type: none; margin: 0; padding: 0">
+            <li style="padding: 7px; align-content: center">
+              <ul
+                style="
+                  margin: 0;
+                  list-style-type: none;
+                  padding: 0;
+                  overflow: hidden;
+                  display: flex;
+                  flex-direction: row;
+                  flex-wrap: wrap;
+                "
+              >
+                <li style="width: 20%">
+                  <a
+                    href="https://es-la.facebook.com/"
+                    target="_blank"
+                    style="
+                      display: block;
+                      color: white;
+                      text-align: center;
+                      text-decoration: none;
+                    "
+                    ><img
+                      src="../img/fb-icon.png"
+                      width="31"
+                      height="32"
+                      alt=""
+                  /></a>
+                </li>
+                <li style="width: 20%">
+                  <a
+                    href="https://www.instagram.com/"
+                    target="_blank"
+                    style="
+                      display: block;
+                      color: white;
+                      text-align: center;
+                      text-decoration: none;
+                    "
+                    ><img
+                      src="../img/instagram-icon.png"
+                      width="31"
+                      height="32"
+                      alt=""
+                  /></a>
+                </li>
+                <li style="width: 20%">
+                  <a
+                    href="https://walink.co/0edb82"
+                    target="_blank"
+                    style="
+                      display: block;
+                      color: white;
+                      text-align: center;
+                      text-decoration: none;
+                    "
+                    ><img
+                      src="../img/whatsapp.png"
+                      width="32"
+                      height="32"
+                      alt=""
+                  /></a>
+                </li>
+                <li style="width: 20%">
+                  <a
+                    href="https://twitter.com/login"
+                    target="_blank"
+                    style="
+                      display: block;
+                      color: white;
+                      text-align: center;
+                      text-decoration: none;
+                    "
+                    ><img
+                      src="../img/twitter-32.png"
+                      width="32"
+                      height="32"
+                      alt=""
+                  /></a>
+                </li>
+                <li style="width: 20%">
+                  <a
+                    href="https://www.linkedin.com/"
+                    target="_blank"
+                    style="
+                      display: block;
+                      color: white;
+                      text-align: center;
+                      text-decoration: none;
+                    "
+                    ><img
+                      src="../img/linkedin-32.png"
+                      width="32"
+                      height="32"
+                      alt=""
+                  /></a>
+                </li>
+              </ul>
+            </li>
+            <li style="padding: 7px">Av. América y 12 de Octubre</li>
+            <li style="padding: 7px">+593 0978867645</li>
+            <li style="padding: 7px">demo@gmail.com</li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
