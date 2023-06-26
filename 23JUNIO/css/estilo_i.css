@@ -1,0 +1,48 @@
+nav {
+  display: none;
+}
+
+BODY {
+  font: 8pt Verdana, Geneva, Arial, Helvetica, sans-serif;
+  margin: 10 0 10 0px;
+  text-align: center;
+}
+
+#contenido {
+  column-count: 1;
+  column-gap: 20px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  text-align: justify;
+  border-radius: 0.75rem;
+  box-shadow: 0 22px 70px 4px rgba(0, 0, 0, 0.56), 0 0 0 1px rgba(0, 0, 0, 0.3);
+  padding: 10px;
+}
+
+#nosotros {
+  display: contents;
+  background-image: url("img/about-us-image.jpg");
+  margin: auto;
+  height: 750px;
+  border-radius: 0.75rem;
+  box-shadow: 0 22px 70px 4px rgba(0, 0, 0, 0.56), 0 0 0 1px rgba(0, 0, 0, 0.3);
+}
+
+#nosotros td {
+  background-color: whitesmoke;
+  opacity: 0.9;
+  color: blueviolet;
+}
+
+#nosotros h1 {
+  font-family: Gotham, "Helvetica Neue", Helvetica, Arial, "sans-serif";
+  font-size: 50px;
+  margin: 30px;
+}
+
+#nosotros p {
+  font-family: Gotham, "Helvetica Neue", Helvetica, Arial, "sans-serif";
+  font-size: 20px;
+  text-align: justify;
+  margin: 30px;
+}

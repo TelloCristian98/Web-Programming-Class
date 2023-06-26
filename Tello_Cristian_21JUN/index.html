@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="css/form-style.css" />
+  </head>
+  <body>
+    <img src="img/backgroung.jpeg" />
+    <div class="container">
+      <h1>DATOS CLIENTE</h1>
+      <div class="form">
+        <form id="form1" name="form1" method="post" action="php/envio.php">
+          <fieldset>
+            <p>
+              <label for="name">Nombre Completo:</label>
+              <input
+                type="text"
+                name="name"
+                id="name"
+                pattern="([A-Z][a-z]{1,10})+\s+([A-Z][a-z]{1,10})+\s+([A-Z][a-z]{1,10})+\s+([A-Z][a-z]{1,10})"
+                placeholder="Cristian Andres Santos Santos"
+                autofocus
+                required
+              />
+            </p>
+            <p>
+              <label for="id">RUC/ID:</label>
+              <input
+                type="id"
+                name="id"
+                id="id"
+                pattern="^(?:\d{10}|[0-9]{13})$"
+                placeholder="1721212121"
+                required
+              />
+            </p>
+            <p>
+              <label for="date">Fecha de Nacimiento:</label>
+              <input
+                type="date"
+                name="date"
+                id="date"
+                max="2013-01-01"
+                required
+              />
+            </p>
+            <p>
+              <label for="address">Direccion:</label>
+              <input
+                type="text"
+                name="address"
+                pattern="^[a-zA-Z0-9\s.,-]+$"
+                placeholder="25 de Noviembre, Quito"
+                required
+              />
+            </p>
+            <p>
+              <label for="phone">Telefono:</label>
+              <input
+                type="tel"
+                name="phone"
+                id="phone"
+                pattern="[0-9]{1,10}"
+                placeholder="0987654321"
+                required
+              />
+            </p>
+          </fieldset>
+          <div class="form-button">
+            <p>
+              <input type="submit" name="submit" id="submit" value="Enviar" />
+              <input type="reset" name="reset" id="reset" value="Restablecer" />
+            </p>
+          </div>
+        </form>
+      </div>
+    </div>
+  </body>
+</html>
